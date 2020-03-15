@@ -1,4 +1,4 @@
-package anotherMain;
+package matrixDemo;
 
 public class Main2d {
 
