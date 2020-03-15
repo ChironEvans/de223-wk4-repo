@@ -10,8 +10,8 @@ public class ReverseController {
 		Reverser reverser = new Reverser();
 		int[] testArray = {1, 2, 3, 4, 5, 6};
 		int[] reversedArray = reverser.reverseArray(testArray);
-		for (int i : reversedArray) {
-			this.myView.say(i);
+		for (int n : reversedArray) {
+			this.myView.add(n + ", ");
 		}
 		
 	}
