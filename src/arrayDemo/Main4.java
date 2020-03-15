@@ -1,4 +1,4 @@
-package weekFour;
+package arrayDemo;
 
 public class Main4 {
 
