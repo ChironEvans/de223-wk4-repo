@@ -3,8 +3,9 @@ package matrixDemo;
 public class Main2d {
 
 	public static void main(String[] args) {
-		// Initialize a matrix of strings
-		String[] [] level = new String[5] [5];
+		// Initialize a matrix of strings (depricated)
+		// String[] [] level = new String[5] [5];
+		
 		// Initialize an array of strings to fill part of the matrix
 		String[] row = new String[5];
 		row[0] = "#####";
