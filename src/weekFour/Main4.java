@@ -13,13 +13,16 @@ public class Main4 {
 		for (int i = 0; i < numbers.length; i++) {
 			System.out.println(i + "=" + numbers[i]);
 		}
-		
+		// arrays must have a declared length
+		//changing the length of the array requires completely overriding the previous array
 		int[] numbers2 = new int[4];
 		numbers2[0] = 111;
 		numbers2[1] = 222;
-		numbers[2] = 333;
-		numbers[3] = 444;
-		System.out.println(numbers2[0]);
+		numbers2[2] = 333;
+		numbers2[3] = 444;
+		for (int n : numbers2) {
+			System.out.println(n);
+		}
 	}
 
 }
