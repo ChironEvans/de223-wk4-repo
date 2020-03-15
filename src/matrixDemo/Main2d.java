@@ -14,19 +14,8 @@ public class Main2d {
 		row[4] = "#####";
 		
 		
-		//Matrix Traversal!
-		//Loop through each row in the array
-		for (int i = 0; i < row.length; i++) {
-			int j = 0;
-		
-			//loop through each column in the row, populate with data from row array
-			for (char ch: row[i].toCharArray()) {
-				String s = String.valueOf(ch);  
-				level[i][j] = s;
-				j++;
-			};
-		}
-		print2D(level);
+		Level newLevel = new Level(row);
+		print2D(newLevel.levelMatrix);
 	}
 	public static void print2D(String mat[][]) 
     { 

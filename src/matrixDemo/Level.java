@@ -3,8 +3,8 @@ package matrixDemo;
 public class Level {
 	// obj[] [] to create object array
 	protected String [] [] levelMatrix;
-	
-	public void loadLevel(String[] newMatrix) {
+
+	public Level(String[] newMatrix) {
 		int yLen = newMatrix.length;
 		int xLen = newMatrix[0].toCharArray().length;
 		this.levelMatrix = new String[xLen] [yLen];
