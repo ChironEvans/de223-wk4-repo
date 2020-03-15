@@ -9,7 +9,7 @@ public class Main4 {
 			System.out.println(n);
 		}
 		for (int i = 0; i < numbers.length; i++) {
-			System.out.println(i);
+			System.out.println(i + "=" + numbers[i]);
 		}
 	}
 
