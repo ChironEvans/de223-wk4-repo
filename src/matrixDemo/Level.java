@@ -1,6 +1,7 @@
 package matrixDemo;
 
 public class Level {
+	// obj[] [] to create object array
 	protected String [] [] levelMatrix;
 	
 	public void loadLevel(String[] newMatrix) {
