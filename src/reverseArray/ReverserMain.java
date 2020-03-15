@@ -1,6 +1,6 @@
 package reverseArray;
 
-public class ReverseraMain {
+public class ReverserMain {
 	public static void main(String[] args) {
 		IView view = new ConsoleView();
 		ReverseController rc = new ReverseController(view);
