@@ -1,5 +1,5 @@
 package actorMatrixDemo;
 
-public interface Command {
+public interface ActorInvoke {
 	    Actor invoke(Character symbol, int x, int y);
 }

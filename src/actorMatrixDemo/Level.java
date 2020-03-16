@@ -1,6 +1,5 @@
 package actorMatrixDemo;
 
-import java.util.Dictionary;
 import java.util.Hashtable;
 import java.util.Map;
 
@@ -8,40 +7,38 @@ public class Level {
 	// obj[] [] to create object array
 	// Actor is the superclass in this instance, so it is an Actor array
 	protected Actor [] [] levelMatrix;
-	protected Map<Character, Command> objDict = new Hashtable<Character, Command>();
+	protected Map<Character, ActorInvoke> objDict = new Hashtable<Character, ActorInvoke>();
 
 	public Level(String[] newMatrix) {	
-		int x;
-		int y;
-		this.objDict.put('#', new Command() { 
+		this.objDict.put('#', new ActorInvoke() { 
 			@Override
 			public Actor invoke(Character s, int x, int y) {
 				Actor aNewActor = new Wall(s, x, y);
 				return aNewActor;
 			};
 			});
-		this.objDict.put('.', new Command() { 
+		this.objDict.put('.', new ActorInvoke() { 
 			@Override
 			public Actor invoke(Character s, int x, int y) {
 				Actor aNewActor = new Floor(s, x, y);
 				return aNewActor;
 			};
 			});
-		this.objDict.put('+', new Command() { 
+		this.objDict.put('+', new ActorInvoke() { 
 			@Override
 			public Actor invoke(Character s, int x, int y) {
 				Actor aNewActor = new Goal(s, x, y);
 				return aNewActor;
 			};
 			});
-		this.objDict.put('C', new Command() { 
+		this.objDict.put('C', new ActorInvoke() { 
 			@Override
 			public Actor invoke(Character s, int x, int y) {
 				Actor aNewActor = new Box(s, x, y);
 				return aNewActor;
 			};
 			});
-		this.objDict.put('P', new Command() { 
+		this.objDict.put('P', new ActorInvoke() { 
 			@Override
 			public Actor invoke(Character s, int x, int y) {
 				Actor aNewActor = new Player(s, x, y);
