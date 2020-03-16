@@ -10,6 +10,6 @@ public class Box extends Actor {
 		super(symbol, newX, newY);
 		this.xPos = newX;
 		this.yPos = newY;
-		this.actSymbol = symbol;		}
-
+		this.actSymbol = symbol;	
+	}
 }
