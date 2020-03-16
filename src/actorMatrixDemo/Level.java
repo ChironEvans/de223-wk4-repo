@@ -71,6 +71,6 @@ public class Level {
 				// Increment J to keep track of the x position in the row
 				j++;
 			};
-		}
+		};
 	}
 }
