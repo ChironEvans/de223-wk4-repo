@@ -15,8 +15,8 @@ public class ObjMatMain {
 		Level newLevel = new Level(row);
 		print2D(newLevel.levelMatrix);
 	}
-	public static void print2D(Actor mat[][]) 
-    { 
+	
+	public static void print2D(Actor mat[][]) { 
         // Loop through all rows 
         for (int i = 0; i < mat.length; i++) {
   
@@ -27,5 +27,4 @@ public class ObjMatMain {
             System.out.print("\n");
         }
     } 
-
 }
