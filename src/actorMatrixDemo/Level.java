@@ -57,20 +57,20 @@ public class Level {
 		this.levelMatrix = new Actor[xLen] [yLen];
 		
 		//Matrix Traversal!
-				//Loop through each row in the matrix
-				for (int i = 0; i < newMatrix.length; i++) {
-					int j = 0;
-				
-					//loop through each column in the row, create object based on char and add to the row
-					for (char ch: newMatrix[i].toCharArray()) {
-						// Fetch the command in the map at position ch, invoke the command stored there
-						// Pass the Actor type (ch), x pos (j) and y pos (y)
-						Actor aNewActor = this.objDict.get(ch).invoke(ch, j, i);
-						// Add the new Actor object to the matrix
-						this.levelMatrix[i][j] = aNewActor;
-						// Increment J to keep track of the x position in the row
-						j++;
-					};
-				}
+		//Loop through each row in the matrix
+		for (int i = 0; i < newMatrix.length; i++) {
+			int j = 0;
+		
+			//loop through each column in the row, create object based on char and add to the row
+			for (char ch: newMatrix[i].toCharArray()) {
+				// Fetch the command in the map at position ch, invoke the command stored there
+				// Pass the Actor type (ch), x pos (j) and y pos (y)
+				Actor aNewActor = this.objDict.get(ch).invoke(ch, j, i);
+				// Add the new Actor object to the matrix
+				this.levelMatrix[i][j] = aNewActor;
+				// Increment J to keep track of the x position in the row
+				j++;
+			};
+		}
 	}
 }
